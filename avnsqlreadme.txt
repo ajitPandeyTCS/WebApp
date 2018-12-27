@@ -5,6 +5,7 @@ SELECT  *FROM avn;
 
 ALTER TABLE public.avn ADD COLUMN tnum bigint default nextval('ticket_sequence'::regclass) PRIMARY KEY;
 
+
 ALTER TABLE avn ADD COLUMN statuss  varchar(100);
 
 CREATE TABLE public.avn(
